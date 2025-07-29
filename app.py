@@ -11,7 +11,7 @@ st.write("Paste any long article and get a short, clean summary.")
 text = st.text_area("Paste your article here", height=300)
 
 # Load summarization pipeline
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 # Function to split long text into smaller chunks
 def split_text(text, max_words=500):
